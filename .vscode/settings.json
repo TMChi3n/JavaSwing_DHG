@@ -1,0 +1,7 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\chien_pro\\Downloads\\Compressed\\sqljdbc_12.2\\enu\\mssql-jdbc-12.2.0.jre8.jar",
+        "c:\\Users\\chien_pro\\Downloads\\Compressed\\sqljdbc_12.2\\enu\\mssql-jdbc-12.2.0.jre11.jar"
+    ]
+}
