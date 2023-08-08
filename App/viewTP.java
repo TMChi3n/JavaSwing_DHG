@@ -230,30 +230,30 @@ public class viewTP extends JFrame {
     // FIND ITEMS BY WEEK
     private void findItems() {
         String input = JOptionPane.showInputDialog(this, "Nhập ID sản phẩm cần tìm:");
-    if (input == null) {
-        return; // User canceled the input
-    }
-
-    try {
-        int id = Integer.parseInt(input);
-        ThucPham foundItem = jdbcRemote.getTPById(id);
-
-        if (foundItem != null) {
-            // Display the details of the found item
-            JOptionPane.showMessageDialog(this,
-                    "Sản phẩm ID: " + foundItem.getId() +
-                    "\nTên hàng: " + foundItem.getName() +
-                    "\nSố lượng tồn: " + foundItem.getSoLuongTon() +
-                    "\nĐơn giá: " + foundItem.getDonGia() +
-                    "\nNhà cung cấp: " + foundItem.getNhaCungCap() +
-                    "\nNgày sản xuất: " + foundItem.getNgaySanXuat() +
-                    "\nNgày hết hạn: " + foundItem.getNgayHetHan());
-        } else {
-            JOptionPane.showMessageDialog(this, "Không tìm thấy sản phẩm với ID: " + id);
+        if (input == null) {
+            return; // User canceled the input
         }
-    } catch (NumberFormatException ex) {
-        JOptionPane.showMessageDialog(this, "Vui lòng nhập số ID hợp lệ.");
-    }
+
+        try {
+            int id = Integer.parseInt(input);
+            ThucPham foundItem = jdbcRemote.getTPById(id);
+
+            if (foundItem != null) {
+                // Display the details of the found item
+                JOptionPane.showMessageDialog(this,
+                        "Sản phẩm ID: " + foundItem.getId() +
+                        "\nTên hàng: " + foundItem.getName() +
+                        "\nSố lượng tồn: " + foundItem.getSoLuongTon() +
+                        "\nĐơn giá: " + foundItem.getDonGia() +
+                        "\nNhà cung cấp: " + foundItem.getNhaCungCap() +
+                        "\nNgày sản xuất: " + foundItem.getNgaySanXuat() +
+                        "\nNgày hết hạn: " + foundItem.getNgayHetHan());
+            } else {
+                JOptionPane.showMessageDialog(this, "Không tìm thấy sản phẩm với ID: " + id);
+            }
+        } catch (NumberFormatException ex) {
+            JOptionPane.showMessageDialog(this, "Vui lòng nhập số ID hợp lệ.");
+        }
 
     }
 

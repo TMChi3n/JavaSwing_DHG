@@ -74,34 +74,34 @@ public class ManagementApp extends JFrame{
     }
 
     private void pageViewSS() {
-        JFrame viewSSFrame = new viewSS(new HangSS_JdbcGateway());
+        JFrame viewSSFrameRemote = new viewSS(new HangSS_JdbcGateway());
     
-        viewSSFrame.setLocationRelativeTo(null); // Hiển thị cửa sổ ở giữa màn hình
-        viewSSFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE); // Đóng frame khi bấm nút X (không thoát toàn bộ ứng dụng)
+        viewSSFrameRemote.setLocationRelativeTo(null); // Hiển thị cửa sổ ở giữa màn hình
+        viewSSFrameRemote.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE); // Đóng frame khi bấm nút X (không thoát toàn bộ ứng dụng)
 
         // Hiển thị cửa sổ viewTPFrame
-        viewSSFrame.setVisible(true);
+        viewSSFrameRemote.setVisible(true);
         dispose();
     }
 
     private void pageViewDM() {
-        JFrame viewDMFrame = new viewDM(new HangDM_JdbcGateway());
+        JFrame viewDMFrameRemote = new viewDM(new HangDM_JdbcGateway());
 
-        viewDMFrame.setLocationRelativeTo(null); // Hiển thị cửa sổ ở giữa màn hình
-        viewDMFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE); // Đóng frame khi bấm nút X (không thoát toàn bộ ứng dụng)
+        viewDMFrameRemote.setLocationRelativeTo(null); // Hiển thị cửa sổ ở giữa màn hình
+        viewDMFrameRemote.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE); // Đóng frame khi bấm nút X (không thoát toàn bộ ứng dụng)
 
         // Hiển thị cửa sổ viewTPFrame
-        viewDMFrame.setVisible(true);
+        viewDMFrameRemote.setVisible(true);
         dispose();
     }
 
     private void pageViewTP() {
-        JFrame viewTPFrame = new viewTP(new HangTP_JdbcGateway());
-        viewTPFrame.setLocationRelativeTo(null); // Hiển thị cửa sổ ở giữa màn hình
-        viewTPFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE); // Đóng frame khi bấm nút X (không thoát toàn bộ ứng dụng)
+        JFrame viewTPFrameRemote = new viewTP(new HangTP_JdbcGateway());
+        viewTPFrameRemote.setLocationRelativeTo(null); // Hiển thị cửa sổ ở giữa màn hình
+        viewTPFrameRemote.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE); // Đóng frame khi bấm nút X (không thoát toàn bộ ứng dụng)
 
         // Hiển thị cửa sổ viewTPFrame
-        viewTPFrame.setVisible(true);
+        viewTPFrameRemote.setVisible(true);
         dispose();
     }
 
